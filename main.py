@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import dropbox
-
+import access
 
 class TransferData:
     def __init__(self, access_token):
@@ -15,7 +15,7 @@ class TransferData:
 
 
 def main():
-    access_token = '**************'
+    access_token = access.access_token
     transfer_data = TransferData(access_token)
 
     file_from = 'kloudless_local.txt'  # This is name of the file to be uploaded
