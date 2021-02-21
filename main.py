@@ -18,8 +18,8 @@ def main():
     access_token = access.access_token
     transfer_data = TransferData(access_token)
 
-    file_from = 'kloudless_local.txt'  # This is name of the file to be uploaded
-    file_to = '/test_dropbox/kloudless_cloud.txt'  # This is the full path to upload the file to, including name that you wish the file to be called once uploaded.
+    file_from = 'test_local.txt'  # This is name of the file to be uploaded
+    file_to = '/test_dir/test_cloud.txt'  # This is the full path to upload the file to, including name that you wish the file to be called once uploaded.
 
     # API v2
     transfer_data.upload_file(file_from, file_to)
